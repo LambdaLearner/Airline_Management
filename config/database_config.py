@@ -3,12 +3,7 @@
 import mysql.connector
 
 # establish a connection to MySQL database
-connection = mysql.connector.connect(
-  host="localhost",
-  user="educative",
-  password="secret",
-  database="flight"
-)
+connection = mysql.connector.connect()
 
 # create a cusrsor object to perform quries
 mycursor = connection.cursor()
