@@ -10,7 +10,7 @@ mycursor = connection.cursor()
 
 # query for a table named users
 # mycursor.execute("SELECT * from users")
-mycursor.execute("SELECT user, host FROM mysql.user WHERE user = 'educative';")
+mycursor.execute("SELECT user, host FROM mysql.user WHERE user = 'new_user';")
 
 # fetch all retrieved rows
 myresult = mycursor.fetchall()
@@ -26,9 +26,9 @@ connection.close()
 
 def get_db_connection():
     connection = mysql.connector.connect(
-      host="localhost",
-      user="educative",
-      password="secret",
+      host="",
+      user="",
+      password="",
       database="flight"
     )
     return connection
