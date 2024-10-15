@@ -45,10 +45,10 @@ class CLIAuthenticator:
     def __init__(self):
         """CLIAuthenticator for handling user login and registration."""
         self.conn = mysql.connector.connect(
-            host="localhost",
-            user="educative",
-            password="secret",
-            database="flight"
+            host="",
+            user="",
+            password="",
+            database=""
         )
         self.cursor = self.conn.cursor()
 
