@@ -7,8 +7,8 @@ from sqlalchemy import create_engine
 # establish a connection to MySQL database
 connection = mysql.connector.connect(
   host="localhost",
-  user="educative",
-  password="secret",
+  user=".",
+  password=".",
   database="flight"
 )
 
