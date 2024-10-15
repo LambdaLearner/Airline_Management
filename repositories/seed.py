@@ -20,7 +20,7 @@ mycursor = connection.cursor()
 df = pd.read_csv('/usercode/flight_reservation/dataset/airlines.csv')  
 
 # Step 2: Create a SQLAlchemy engine to connect to the MySQL database
-engine = create_engine("mysql+mysqlconnector://educative:secret@localhost/flight")
+engine = create_engine("mysql+mysqlconnector://.:secret@localhost/flight")
 
 # Step 3: Convert the Pandas DataFrame to a format for MySQL table insertion
 df.to_sql('Airline', con=engine, if_exists='append', index=False)
