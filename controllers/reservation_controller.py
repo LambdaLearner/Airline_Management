@@ -21,7 +21,7 @@ class ReservationController:
         # Establish a database connection
         self.connection = mysql.connector.connect(
             host="localhost",
-            user="educative",
+            user="",
             password="secret",
             database="flight"
         )
